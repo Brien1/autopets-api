@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $add_res = $mysqli->query($add);
                 echo ($mysqli->error) ? $mysqli->error . $add_res : "";
                 
-                echo json_encode(["opponent"=> $opp_team, "message"=> "paired"]);
+                echo json_encode(["paired"=> $opp_team, "message"=> "paired"]);
 
             }
             
